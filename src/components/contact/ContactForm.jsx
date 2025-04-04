@@ -26,30 +26,35 @@ const ContactForm = ({ className = '', showTitle = true }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus({ loading: true, success: false, error: null });
-  
+
     try {
-      const response = await fetch("http://localhost/futurxon/backend/process_form.php", {
+      console.log('Submitting form data:', formData); // Debug log
+
+      const response = await fetch('https://infinoid.com/backend/process_form.php', {
         method: 'POST',
-        headers: { 
+        headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
-        credentials: 'omit',
         body: JSON.stringify(formData)
       });
-  
-      const responseText = await response.text();
+
+      console.log('Response status:', response.status); // Debug log
+
       let data;
       try {
-        data = JSON.parse(responseText);
-      } catch (e) {
+        const textResponse = await response.text();
+        console.log('Raw response:', textResponse); // Debug log
+        data = JSON.parse(textResponse);
+      } catch (parseError) {
+        console.error('Error parsing response:', parseError);
         throw new Error('Invalid response from server');
       }
-      
+
       if (!response.ok) {
-        throw new Error(data.message || `HTTP error! status: ${response.status}`);
+        throw new Error(data.message || `Server error: ${response.status}`);
       }
-      
+
       if (data.success) {
         setStatus({ loading: false, success: true, error: null });
         setFormData({
@@ -63,9 +68,10 @@ const ContactForm = ({ className = '', showTitle = true }) => {
         throw new Error(data.message || 'Submission failed');
       }
     } catch (error) {
-      setStatus({ 
-        loading: false, 
-        success: false, 
+      console.error('Form submission error:', error);
+      setStatus({
+        loading: false,
+        success: false,
         error: error.message || 'Failed to submit form. Please try again.'
       });
     }
