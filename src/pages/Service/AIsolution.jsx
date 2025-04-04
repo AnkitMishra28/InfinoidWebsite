@@ -5,8 +5,8 @@ import AI2 from '../../components/services/AI-solution/ai2';
 import AI3 from '../../components/services/AI-solution/ai3';
 import AI4 from '../../components/services/AI-solution/ai4';
 import AI5 from '../../components/services/AI-solution/ai5';
-import Footer from '../../components/footer';
 import Contact2 from '../../components/contact/Contact2';
+import Footer from '../../components/footer';
 
 const aidev = () => {
   return (

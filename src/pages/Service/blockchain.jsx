@@ -5,8 +5,8 @@ import Chain2 from '../../components/services/Blockchain/chain2';
 import Chain3 from '../../components/services/Blockchain/chain3';
 import Chain4 from '../../components/services/Blockchain/chain4';
 import Chain5 from '../../components/services/Blockchain/chain5';
-import Footer from '../../components/footer';
 import Contact2 from '../../components/contact/Contact2';
+import Footer from '../../components/footer';
 
 const bcdev = () => {
   return (

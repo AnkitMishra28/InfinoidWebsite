@@ -5,8 +5,8 @@ import Devop2 from '../../components/services/devops/devop2';
 import Devop3 from '../../components/services/devops/devop3';
 import Devop4 from '../../components/services/devops/devop4';
 import Devop5 from '../../components/services/devops/devop5';
-import Footer from '../../components/footer';
 import Contact2 from '../../components/contact/Contact2';
+import Footer from '../../components/footer';
 
 const mobiledev = () => {
   return (

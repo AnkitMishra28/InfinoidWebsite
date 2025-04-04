@@ -5,8 +5,8 @@ import AR2 from '../../components/services/AR/ar2';
 import AR3 from '../../components/services/AR/ar3';
 import AR4 from '../../components/services/AR/ar4';
 import AR5 from '../../components/services/AR/ar5';
-import Footer from '../../components/footer';
 import Contact2 from '../../components/contact/Contact2';
+import Footer from '../../components/footer';
 
 const aidev = () => {
   return (

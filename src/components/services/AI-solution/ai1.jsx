@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigation } from '../../../utils/navigation';
 import AIsolutionbg from "../../../../public/images/aisolutionbg.svg";
 
 const FullScreenUI = () => {
+  const { navigateToContact } = useNavigation();
+
   return (
     <div className="h-screen w-full flex flex-col items-center justify-center text-white relative overflow-hidden">
      
@@ -50,7 +53,10 @@ const FullScreenUI = () => {
           Revolutionize your business with cutting-edge artificial intelligence. From machine learning implementation to predictive analytics, we deliver intelligent solutions that drive innovation. Harness the power of neural networks, automate processes, and unlock data-driven decisions through our bespoke AI strategies and comprehensive development services.
         </p>
 
-        <button className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 text-base sm:text-lg font-semibold rounded-3xl bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 hover:from-purple-600 hover:via-blue-600 hover:to-pink-600 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/30">
+        <button 
+          onClick={navigateToContact}
+          className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 text-base sm:text-lg font-semibold rounded-3xl bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 hover:from-purple-600 hover:via-blue-600 hover:to-pink-600 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/30"
+        >
           <span className="relative z-10">Start AI Transformation</span>
           <div className="absolute inset-0 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-purple-500/30 via-blue-500/30 to-pink-500/30"></div>
           <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>

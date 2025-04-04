@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigation } from '../../../utils/navigation';
 
 const AboutUs = () => {
+  const { navigateToContact } = useNavigation();
+
   return (
     <div className="relative flex items-center justify-center min-h-screen overflow-hidden text-white px-4 md:px-6 pt-24 md:pt-32">
       
@@ -17,7 +20,10 @@ const AboutUs = () => {
         </h2>
         <div className="group relative inline-block">
           <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full blur opacity-30 group-hover:opacity-50 transition duration-1000" />
-          <button className="relative bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
+          <button 
+            onClick={navigateToContact}
+            className="relative bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:scale-[1.02] hover:shadow-xl"
+          >
             Let's Connect 
           </button>
         </div>

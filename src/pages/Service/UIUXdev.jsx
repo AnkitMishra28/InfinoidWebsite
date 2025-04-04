@@ -5,8 +5,8 @@ import UIux2 from '../../components/services/UIUXfolder/UIUXdesign2';
 import UIux3 from '../../components/services/UIUXfolder/UIUXdesign3';
 import UIux4 from '../../components/services/UIUXfolder/UIUXdesign4';
 import UIux5 from '../../components/services/UIUXfolder/UIUXdesign5';
-import Footer from '../../components/footer';
 import Contact2 from '../../components/contact/Contact2';
+import Footer from '../../components/footer';
 
 const UIUXdev = () => {
   return (

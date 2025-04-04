@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigation } from '../../utils/navigation';
 
 const Career = () => {
+  const { navigateToContact } = useNavigation();
+
   return (
     <div className="relative h-[80vh] md:min-h-screen flex flex-col md:flex-row items-center justify-center px-4 md:px-16 text-white overflow-hidden">
 
@@ -12,7 +15,10 @@ const Career = () => {
         <p className="text-base md:text-xl text-gray-200/80 max-w-2xl leading-relaxed">
           Join our constellation of innovators where quantum computing meets AI frontiers. Craft solutions that redefine reality while orbiting in a culture of relentless curiosity.
         </p>
-        <button className="group relative px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold bg-gradient-to-r from-purple-600/90 to-purple-300/90 hover:from-purple-500 transition-all duration-300 rounded-xl md:rounded-2xl shadow-xl hover:shadow-2xl shadow-purple-900/50 hover:shadow-blue-900/50 transform hover:scale-[1.02] active:scale-95 overflow-hidden">
+        <button 
+          onClick={navigateToContact}
+          className="group relative px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold bg-gradient-to-r from-purple-600/90 to-purple-300/90 hover:from-purple-500 transition-all duration-300 rounded-xl md:rounded-2xl shadow-xl hover:shadow-2xl shadow-purple-900/50 hover:shadow-blue-900/50 transform hover:scale-[1.02] active:scale-95 overflow-hidden"
+        >
           <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           <span className="bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
             Launch Your Odyssey →
@@ -48,6 +54,17 @@ const Career = () => {
           <div className="absolute inset-0 bg-purple-500/10 rounded-xl blur-2xl"></div>
         </div>
       </div>
+
+      {/* Apply Now Button */}
+      <button 
+        onClick={navigateToContact}
+        className="fixed bottom-8 right-8 bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-500 hover:to-blue-400 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl shadow-purple-900/50 hover:shadow-blue-900/40 z-50 flex items-center gap-2"
+      >
+        <span>Apply Now</span>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+        </svg>
+      </button>
 
       {/* Global Styles */}
       <style jsx global>{`

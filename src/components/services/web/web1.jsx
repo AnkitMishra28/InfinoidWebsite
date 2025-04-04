@@ -1,7 +1,10 @@
 import React from "react";
 import Screenpng from '../../../../public/images/screen.png';
+import { useNavigation } from '../../../utils/navigation';
 
 const EnterpriseWebUI = () => {
+  const { navigateToContact } = useNavigation();
+
   return (
     <div className="relative w-full min-h-screen flex flex-col md:flex-row items-center px-4 xs:px-6 sm:px-8 md:px-12 lg:px-16 py-12 md:py-0">
       {/* Left Section */}
@@ -16,7 +19,10 @@ const EnterpriseWebUI = () => {
         <p className="text-base xs:text-lg sm:text-xl text-gray-300/80 mb-6 xs:mb-8 leading-relaxed max-w-xl mx-auto md:mx-0">
           Custom web technology development services to build secure and scalable web applications.
         </p>
-        <button className="bg-gradient-to-r from-purple-600 via-purple-500 to-gray-400  hover:from-purple-400 hover:to-purple-400 text-white font-semibold py-4 xs:py-3 px-8 xs:px-8 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg sm:shadow-lg sm:hover:shadow-xl shadow-purple-900/50 hover:shadow-blue-900/40 text-sm xs:text-base">
+        <button 
+          onClick={navigateToContact}
+          className="bg-gradient-to-r from-purple-600 via-purple-500 to-gray-400  hover:from-purple-400 hover:to-purple-400 text-white font-semibold py-4 xs:py-3 px-8 xs:px-8 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg sm:shadow-lg sm:hover:shadow-xl shadow-purple-900/50 hover:shadow-blue-900/40 text-sm xs:text-base"
+        >
           Consult Us →
         </button>
       </div>

@@ -5,8 +5,8 @@ import Cyber2 from '../../components/services/Cybersecurity/cyber2';
 import Cyber3 from '../../components/services/Cybersecurity/cyber3';
 import Cyber4 from '../../components/services/Cybersecurity/cyber4';
 import Cyber5 from '../../components/services/Cybersecurity/cyber5';
-import Footer from '../../components/footer';
 import Contact2 from '../../components/contact/Contact2';
+import Footer from '../../components/footer';
 
 const cyberdev = () => {
   return (

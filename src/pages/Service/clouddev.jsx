@@ -5,8 +5,8 @@ import Cloud2 from '../../components/services/Cloud/cloud2';
 import Cloud3 from '../../components/services/Cloud/cloud3';
 import Cloud4 from '../../components/services/Cloud/cloud4';
 import Cloud5 from '../../components/services/Cloud/cloud5';
-import Footer from '../../components/footer';
 import Contact2 from '../../components/contact/Contact2';
+import Footer from '../../components/footer';
 
 const clouddev = () => {
   return (
