@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 // Database configuration
 $host = 'localhost';
@@ -44,7 +43,7 @@ try {
 } catch (Exception $e) {
     die("Database connection error: " . $e->getMessage());
 }
-=======
+?>
 <?php
 // Database configuration
 $host = 'localhost';
@@ -90,5 +89,4 @@ try {
 } catch (Exception $e) {
     die("Database connection error: " . $e->getMessage());
 }
->>>>>>> 9667ecf (Updated components, added new files)
 ?> 
