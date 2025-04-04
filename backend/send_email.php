@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 function sendEmail($to, $subject, $message, $headers) {
     try {
@@ -16,7 +15,7 @@ function sendEmail($to, $subject, $message, $headers) {
         return false;
     }
 }
-=======
+?>
 <?php
 function sendEmail($to, $subject, $message, $headers) {
     try {
@@ -34,5 +33,4 @@ function sendEmail($to, $subject, $message, $headers) {
         return false;
     }
 }
->>>>>>> 9667ecf (Updated components, added new files)
 ?> 
