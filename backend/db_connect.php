@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 // Database configuration for Hostinger
 $host = "localhost"; // Hostinger's MySQL host
@@ -12,7 +11,7 @@ try {
 } catch(PDOException $e) {
     die("Connection failed: " . $e->getMessage());
 }
-=======
+?> 
 <?php
 // Database configuration for Hostinger
 $host = "localhost"; // Hostinger's MySQL host
@@ -26,5 +25,4 @@ try {
 } catch(PDOException $e) {
     die("Connection failed: " . $e->getMessage());
 }
->>>>>>> 9667ecf (Updated components, added new files)
 ?> 
