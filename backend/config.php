@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -38,7 +37,8 @@ $sql = "CREATE TABLE IF NOT EXISTS contacts (
 if (!mysqli_query($conn, $sql)) {
     die("ERROR: Could not create table. " . mysqli_error($conn));
 }
-=======
+?>    
+
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -78,5 +78,4 @@ $sql = "CREATE TABLE IF NOT EXISTS contacts (
 if (!mysqli_query($conn, $sql)) {
     die("ERROR: Could not create table. " . mysqli_error($conn));
 }
->>>>>>> 9667ecf (Updated components, added new files)
 ?>
